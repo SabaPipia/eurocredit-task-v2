@@ -45,9 +45,11 @@ const menuItems = computed(() => [
           <Button variant="icon" class="hidden border border-solid border-neutral-200 sm:block">
             <i class="pi pi-user p-1 text-lg"></i>
           </Button>
-          <Button class="hidden md:block" size="medium" variant="primary">{{
-            t('header.CTA')
-          }}</Button>
+          <a href="#request-loan" class="flex w-fit">
+            <Button class="hidden md:block" size="medium" variant="primary">{{
+              t('header.CTA')
+            }}</Button>
+          </a>
 
           <BurgerMenu :menu-items="menuItems" />
         </div>

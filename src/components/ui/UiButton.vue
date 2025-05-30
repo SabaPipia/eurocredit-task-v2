@@ -2,7 +2,7 @@
   <button
     :class="
       cn(
-        'font-firago flex items-center justify-center gap-2 border-none text-sm',
+        'font-firago flex cursor-pointer items-center justify-center gap-2 border-none text-sm',
         variant === 'primary' && 'bg-brand-dark-blue rounded-full text-white',
         variant === 'icon' && 'rounded-full bg-white/30 p-2.5 text-black',
         variant !== 'icon' && size === 'large' && 'px-6.5 py-4.5 font-medium',

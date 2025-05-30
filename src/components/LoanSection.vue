@@ -8,7 +8,8 @@ const { t } = useI18n()
 
 <template>
   <div
-    class="mx-auto my-16 flex w-full max-w-[1200px] flex-col items-center rounded-[48px] bg-neutral-100 px-5 py-10 md:my-24 md:px-28 md:py-12 lg:my-32"
+    class="mx-auto my-20 flex w-full max-w-[1200px] flex-col items-center rounded-[48px] bg-neutral-100 px-5 py-10 md:my-24 md:px-28 md:py-12 lg:my-32"
+    id="request-loan"
   >
     <h1
       class="font-firago text-center text-3xl leading-normal font-bold tracking-[-0.216px] text-neutral-800 md:text-4xl"

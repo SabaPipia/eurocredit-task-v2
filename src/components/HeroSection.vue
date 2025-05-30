@@ -28,7 +28,11 @@ const BENEFITS = computed(() => [
       </p>
 
       <div class="mb-6 md:mb-11">
-        <Button variant="primary">{{ t('hero.button') }}</Button>
+        <a href="#request-loan" class="flex w-fit">
+          <Button variant="primary">
+            {{ t('hero.button') }}
+          </Button>
+        </a>
       </div>
 
       <ul class="flex list-none flex-col gap-4 p-0">
