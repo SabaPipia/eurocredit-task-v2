@@ -15,7 +15,7 @@
       :class="isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'"
       @click.stop
     >
-      <div class="p-5">
+      <div class="p-5 sm:px-12.5 sm:py-3">
         <nav>
           <ul class="space-y-4">
             <li v-for="(item, index) in menuItems" :key="index">
