@@ -16,9 +16,7 @@ const BENEFITS = computed(() => [
 </script>
 
 <template>
-  <section
-    class="xs:px-8.5 xs:py-5 mx-auto mt-0 flex max-w-[1200px] flex-col justify-between gap-16 p-5 sm:px-12.5 sm:py-3 md:mt-10 lg:px-28 lg:py-6 xl:flex-row"
-  >
+  <section class="mt-0 flex w-full flex-col items-center justify-between gap-7 xl:flex-row">
     <div class="flex flex-col justify-center">
       <h1
         class="font-firago xs:text-2xl mb-2 text-xl leading-normal font-semibold text-neutral-800 sm:mb-4 md:text-4xl md:leading-[54px] md:font-bold lg:text-[42px]"
@@ -44,6 +42,6 @@ const BENEFITS = computed(() => [
         </li>
       </ul>
     </div>
-    <img class="hero-img w-full lg:w-4/5 xl:m-5 xl:w-1/2" :src="heroImg" alt="" />
+    <img class="hero-img w-full md:w-3/4 lg:w-3/5 xl:w-full" :src="heroImg" alt="" />
   </section>
 </template>
