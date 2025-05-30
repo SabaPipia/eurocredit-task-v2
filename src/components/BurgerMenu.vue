@@ -15,7 +15,7 @@
       :class="isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'"
       @click.stop
     >
-      <div class="p-5 sm:px-12.5 sm:py-3">
+      <div class="xs:px-8.5 xs:py-5 p-5 sm:px-12.5 sm:py-3">
         <nav>
           <ul class="space-y-4">
             <li v-for="(item, index) in menuItems" :key="index">
@@ -84,7 +84,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onUnmounted } from 'vue'
 import Button from './ui/UiButton.vue'
 import { useI18n } from 'vue-i18n'
 
@@ -103,11 +103,35 @@ defineProps<Props>()
 
 const isOpen = ref(false)
 
+const lockBodyScroll = () => {
+  document.body.style.overflow = 'hidden'
+  document.body.style.paddingRight = '0px' // Prevent layout shift
+}
+
+const unlockBodyScroll = () => {
+  document.body.style.overflow = ''
+  document.body.style.paddingRight = ''
+}
+
 const toggleMenu = () => {
   isOpen.value = !isOpen.value
+
+  if (isOpen.value) {
+    lockBodyScroll()
+  } else {
+    unlockBodyScroll()
+  }
 }
 
 const closeMenu = () => {
   isOpen.value = false
+  unlockBodyScroll()
 }
+
+// Cleanup: unlock scroll if component is unmounted while menu is open
+onUnmounted(() => {
+  if (isOpen.value) {
+    unlockBodyScroll()
+  }
+})
 </script>

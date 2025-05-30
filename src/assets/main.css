@@ -51,4 +51,6 @@
 
   --color-success-100: #d1fadf;
   --color-success-500: #12b76a;
+
+  --breakpoint-xs: 480px;
 }
