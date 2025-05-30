@@ -21,7 +21,7 @@ const percentage = computed(() => ((sliderValue.value - min) / (max - min)) * 10
       :style="{ '--fill-percentage': percentage + '%' }"
     />
     <div
-      class="tooltip font-abeezee absolute -translate-x-1/2 rounded-[4px] border border-[#E2E4E9] bg-white p-1 text-center text-xs text-[#0A0D14]"
+      class="font-abeezee border-stroke-soft-200 text-main-900 absolute -translate-x-1/2 rounded-[4px] border bg-white p-1 text-center text-xs"
       :style="{ left: percentage + '%', top: '35px' }"
     >
       {{ sliderValue.toLocaleString() }}₾

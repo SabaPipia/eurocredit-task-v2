@@ -38,6 +38,8 @@
 
   --color-brand-dark-blue: #1a3364;
 
+  --color-main-900: #0a0d14;
+
   --color-neutral-800: #161922;
   --color-neutral-700: #20232d;
   --color-neutral-500: #525866;
@@ -51,6 +53,8 @@
 
   --color-success-100: #d1fadf;
   --color-success-500: #12b76a;
+
+  --color-stroke-soft-200: #e2e4e9;
 
   --breakpoint-xs: 480px;
 }
