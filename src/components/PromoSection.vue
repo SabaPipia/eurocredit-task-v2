@@ -7,7 +7,7 @@ const { t } = useI18n()
 
 <template>
   <div
-    class="font-firago bg-brand-dark-blue text-neutral-0 flex items-center justify-center gap-4 px-1 py-3 text-center text-sm leading-normal font-semibold"
+    class="font-firago bg-brand-dark-blue text-neutral-0 flex items-center justify-center gap-4 px-1 py-3 text-center text-xs leading-normal font-semibold sm:text-sm"
   >
     <span>
       {{ t('promo') }}

@@ -15,7 +15,7 @@ const NAVITEMS = computed(() => [
 </script>
 
 <template>
-  <nav class="flex w-full justify-center bg-neutral-100 p-5 sm:px-12.5 sm:py-3 lg:px-28 lg:py-6">
+  <nav class="flex w-full justify-center bg-neutral-100 p-5 sm:px-12.5 sm:py-6 lg:px-28 lg:py-6">
     <div>
       <ul class="m-0 flex list-none flex-wrap justify-center gap-x-10 gap-y-5 p-0">
         <a class="text-decoration-none" href="#" v-for="(item, index) in NAVITEMS" :key="index">
