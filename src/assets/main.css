@@ -1,2 +1,54 @@
-/* @import './base.css'; */
 @import 'tailwindcss';
+
+@font-face {
+  font-family: 'ABeeZee';
+  src: url('../assets/fonts/ABeeZee/ABeeZee-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraGO';
+  src:
+    url('../assets/fonts/FiraGO/FiraGO-Regular.woff') format('woff'),
+    url('../assets/fonts/FiraGO/FiraGO-Regular.woff2') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraGO';
+  src:
+    url('../assets/fonts/FiraGO/FiraGO-SemiBold.woff') format('woff'),
+    url('../assets/fonts/FiraGO/FiraGO-SemiBold.woff2') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraGO';
+  src:
+    url('../assets/fonts/FiraGO/FiraGO-Bold.woff') format('woff'),
+    url('../assets/fonts/FiraGO/FiraGO-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@theme {
+  --font-abeezee: 'ABeeZee', sans-serif;
+  --font-firago: 'FiraGO', sans-serif;
+
+  --color-brand-dark-blue: #1a3364;
+
+  --color-neutral-800: #161922;
+  --color-neutral-700: #20232d;
+  --color-neutral-500: #525866;
+  --color-neutral-200: #e2e4e9;
+  --color-neutral-100: #f6f8fa;
+  --color-neutral-0: #ffffff;
+
+  --color-gray-600: #475467;
+
+  --color-text-color: #ffffff;
+
+  --color-success-100: #d1fadf;
+  --color-success-500: #12b76a;
+}
