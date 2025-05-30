@@ -127,7 +127,6 @@ const closeMenu = () => {
   unlockBodyScroll()
 }
 
-// Cleanup: unlock scroll if component is unmounted while menu is open
 onUnmounted(() => {
   if (isOpen.value) {
     unlockBodyScroll()
