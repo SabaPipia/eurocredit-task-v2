@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import Button from './components/ui/UiButton.vue'
+import Header from './components/HeaderSection.vue'
+import PromoSection from './components/PromoSection.vue'
 </script>
 
 <template>
-  <Button size="medium">Click me</Button>
+  <PromoSection />
+  <Header />
+
+  <main></main>
 </template>
