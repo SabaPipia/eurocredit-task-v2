@@ -20,7 +20,7 @@ const menuItems = computed(() => [
 </script>
 
 <template>
-  <header class="mx-auto flex flex-col items-center leading-3.5">
+  <header class="mx-auto flex flex-col items-center border-b border-neutral-100 leading-3.5">
     <div
       class="xs:px-8.5 xs:py-5 flex w-full max-w-[1440px] justify-between p-5 sm:px-12.5 sm:py-3 lg:px-28 lg:py-6"
     >
