@@ -68,7 +68,6 @@
               <i class="pi pi-phone text-brand-dark-blue text-sm"></i>
             </div>
             <div class="text-center">
-              <p class="mb-1 text-xs text-neutral-500">ზარის ცენტრი</p>
               <a
                 href="tel:+995555624421"
                 class="font-firago hover:text-brand-dark-blue text-sm font-semibold text-neutral-700 transition-colors duration-200"
