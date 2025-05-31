@@ -16,7 +16,7 @@ const { t } = useI18n()
     >
       {{ t('loan.heading') }}
     </h1>
-    <p class="font-abeezee mt-2 mb-7 text-center text-sm leading-7 font-normal text-neutral-700">
+    <p class="font-abeezee mt-2 mb-7 text-center text-base leading-7 font-normal text-neutral-700">
       {{ t('loan.subheading') }}
     </p>
     <div class="flex w-full max-w-[450px] flex-col">

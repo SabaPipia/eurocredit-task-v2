@@ -20,7 +20,7 @@ const NAVITEMS = computed(() => [
       <ul class="m-0 flex list-none flex-wrap justify-center gap-x-10 gap-y-5 p-0">
         <a class="text-decoration-none" href="#" v-for="(item, index) in NAVITEMS" :key="index">
           <li
-            class="font-firago hover:text-brand-dark-blue text-sm leading-normal font-medium text-neutral-700 hover:underline"
+            class="font-firago hover:text-brand-dark-blue text-sm leading-normal font-semibold text-neutral-700 hover:underline"
           >
             {{ item.name }}
           </li>
