@@ -18,7 +18,7 @@ const BENEFITS = computed(() => [
 
 <template>
   <section class="flex w-full flex-col items-center justify-between gap-10 xl:flex-row xl:gap-7">
-    <div class="flex flex-col justify-center">
+    <div class="flex w-full flex-col justify-center">
       <h1
         class="font-firago xs:text-2xl mb-2 text-xl leading-normal font-semibold text-neutral-800 sm:mb-4 md:text-4xl md:leading-[54px] md:font-bold lg:text-[42px]"
       >
