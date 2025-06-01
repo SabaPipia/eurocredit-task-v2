@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import Header from './components/HeaderSection.vue'
-import PromoSection from './components/PromoSection.vue'
-import HeroSection from './components/HeroSection.vue'
-import LoanSection from './components/LoanSection.vue'
+import Header from './components/layout/HeaderSection.vue'
+import PromoSection from './components/sections/PromoSection.vue'
+import HeroSection from './components/sections/HeroSection.vue'
+import LoanSection from './components/sections/LoanSection.vue'
 
 document.title = 'ევროკრედიტი'
 </script>
@@ -12,7 +12,7 @@ document.title = 'ევროკრედიტი'
   <Header />
 
   <main
-    class="xs:px-8.5 xs:py-5 mx-auto mt-7 flex w-full max-w-[1440px] flex-col p-5 sm:px-12.5 sm:py-3 md:mt-10 md:gap-10 lg:gap-16 lg:px-28 lg:py-6"
+    class="mx-auto mt-7 flex w-full max-w-[1440px] flex-col px-8 sm:px-12.5 sm:py-3 md:mt-10 md:gap-10 lg:gap-16 lg:px-28 lg:py-6"
   >
     <HeroSection />
     <LoanSection />

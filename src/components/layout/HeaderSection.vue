@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
 import logo from '@/assets/eurocredit_logo.png'
-import Button from './ui/UiButton.vue'
+import Button from '../ui/UiButton.vue'
 import HeaderMenu from './HeaderMenu.vue'
 import LanguageSwitcher from './LanguageSwitcher.vue'
 import BurgerMenu from './BurgerMenu.vue'
@@ -22,7 +22,7 @@ const menuItems = computed(() => [
 <template>
   <header class="mx-auto flex flex-col items-center border-b border-neutral-100 leading-3.5">
     <div
-      class="xs:px-8.5 xs:py-5 flex w-full max-w-[1440px] justify-between p-5 sm:px-12.5 sm:py-3 lg:px-28 lg:py-6"
+      class="xs:py-5 flex w-full max-w-[1440px] justify-between px-8 py-5 sm:px-12.5 sm:py-3 lg:px-28 lg:py-6"
     >
       <div class="flex items-center">
         <img alt="Vue logo" class="size-9/12 sm:size-auto" :src="logo" />

@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import heroImg from '@/assets/hero_img.png'
-import Button from './ui/UiButton.vue'
+import Button from '../ui/UiButton.vue'
 import heroCheck from '@/assets/check_icon.png'
 import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
+import Image from 'primevue/image'
 
 const { t } = useI18n()
 
@@ -16,7 +17,7 @@ const BENEFITS = computed(() => [
 </script>
 
 <template>
-  <section class="flex w-full flex-col items-center justify-between gap-7 xl:flex-row">
+  <section class="flex w-full flex-col items-center justify-between gap-10 xl:flex-row xl:gap-7">
     <div class="flex flex-col justify-center">
       <h1
         class="font-firago xs:text-2xl mb-2 text-xl leading-normal font-semibold text-neutral-800 sm:mb-4 md:text-4xl md:leading-[54px] md:font-bold lg:text-[42px]"
@@ -46,6 +47,8 @@ const BENEFITS = computed(() => [
         </li>
       </ul>
     </div>
-    <img class="hero-img w-full md:w-3/4 lg:w-3/5 xl:w-full" :src="heroImg" alt="" />
+    <div class="flex w-full justify-center">
+      <Image :src="heroImg" alt="" />
+    </div>
   </section>
 </template>

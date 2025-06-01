@@ -84,7 +84,7 @@
 
 <script setup lang="ts">
 import { ref, onUnmounted } from 'vue'
-import Button from './ui/UiButton.vue'
+import Button from '../ui/UiButton.vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
