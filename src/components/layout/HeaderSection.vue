@@ -38,7 +38,7 @@ const menuItems = computed(() => [
         </div>
       </div>
 
-      <div class="flex items-center gap-8">
+      <div class="flex items-center gap-4 lg:gap-8">
         <LanguageSwitcher />
 
         <div class="flex gap-2">
